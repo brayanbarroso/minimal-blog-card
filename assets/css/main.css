@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #fafaf9;
+  --card: #ffffff;
+  --text-label: #883ae1;
+  --title: #20293a;
+  --paragraph: #6c727f;
+  --background-label: #e6d6fc;
+}
+
+body {
+  background-color: var(--background);
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.875rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card {
+  /* border: 1px solid red; */
+  background-color: var(--card);
+  border-radius: 12px;
+  box-shadow: 2px 0px 13px 3px rgba(0, 0, 0, 0.2);
+  padding-block-end: 20px;
+  width: 368px;
+}
+
+.card__img {
+  margin-block-end: 16px;
+  margin: 16px;
+}
+
+.card__img img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card__label {
+  margin: 16px;
+}
+
+.card__label span {
+  background-color: var(--background-label);
+  border-radius: 20px;
+  color: var(--text-label);
+  font-size: 0.625rem;
+  font-weight: bold;
+  padding: 6px 20px;
+}
+
+.card__title {
+  color: var(--title);
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin: 16px 16px 6px 16px;
+}
+
+.card__descriptions {
+  color: var(--paragraph);
+  margin: 16px 16px 20px 16px;
+}
+
+.card__footer {
+  color: var(--paragraph);
+  font-size: 0.75rem;
+  margin: 20px 16px 0px 16px;
+}
